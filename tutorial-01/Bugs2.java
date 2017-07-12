@@ -1,8 +1,8 @@
 /* COMP 1006/1406 - Summer 2016 - Tutorial 1
- * 
- * Compile and run the program to see what goes wrong.
- * 
+ * missing semi colon ;, missing quotations ""
  */
+import java.lang.Math;
+
 public class Bugs2{
    
   /** main method that is the program */
@@ -17,8 +17,12 @@ public class Bugs2{
     /* iterate over the array and print out some information        */
     /* Note: we combine strings with + (the concatenation operator) */
     for(int i=0; i<words.length; i += 1){
-      System.out.println(words[i] + " has length = " + words[i].length());
+      System.out.println(words[i] + " has length = " + "words[i].length()");
+        //System.out.println("words[i] is " + words[i]);
+        //System.out.println("length of words[i] is ");
+        //System.out.println("words[i].length()");
+        
     }
   }
-  
+
 }
